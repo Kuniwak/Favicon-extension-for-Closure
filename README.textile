@@ -7,7 +7,8 @@ h1. Greasemonkey storage module for Closure
 h2. Abstract
 
 This module provides adaptive favicon module, can works in Chrome extension, etc...
-If you want the module using on Chrome extension, add @"chrome://favicon/"@ to @permissions@" in @manifest.json@ .
+If you want the module using on Chrome extension, add @"chrome://favicon/"@ to @"permissions"@ in @manifest.json@ .
+See details on "Official reference":http://code.google.com/chrome/extensions/manifest.html#permissions .
 
 
 h2. API Reference
