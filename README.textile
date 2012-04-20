@@ -1,0 +1,15 @@
+h1. Greasemonkey storage module for Closure
+
+"Here":https://github.com/OrgaChem/Favicon-extension-for-Closure/blob/master/README_Ja.textile is a README for Japanese.
+日本語のREADMEは "こちら":https://github.com/OrgaChem/Favicon-extension-for-Closure/blob/master/README_Ja.textile
+
+
+h2. Abstract
+
+This module provides adaptive favicon module, can works in Chrome extension, etc...
+If you want the module using on Chrome extension, add @"chrome://favicon/"@ to @permissions@" in @manifest.json@ .
+
+
+h2. API Reference
+
+Show the "Wiki":https://github.com/OrgaChem/Favicon-extension-for-Closure/wiki/API-Reference .

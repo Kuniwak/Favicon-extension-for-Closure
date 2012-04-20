@@ -1,0 +1,12 @@
+h1. Closure のためのエクステンション用 Favicon モジュール
+
+h2. 概要
+
+このモジュールはChrome extension、Firefox Greasemonkey などに適応して動作する Favicon モジュールです。
+Chrome extension の場合は、 @manifest.json@ の @permissions@" に @"chrome://favicon/"@ を追加してください。
+
+
+h2. API リファレンス
+
+"Wiki":https://github.com/OrgaChem/Favicon-extension-for-Closure/wiki/API-%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9(API-Reference-for-Japanese) を参照してください。
+英語版は "こちら":https://github.com/OrgaChem/Favicon-extension-for-Closure/wiki/API-Reference 。
