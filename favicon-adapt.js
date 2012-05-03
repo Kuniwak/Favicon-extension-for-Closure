@@ -17,7 +17,7 @@ goog.require('orga.favicon.chrome.ex');
 /**
  * Returns a favicon helper that is adapted environment where the script runs
  * on.
- * @return {goog.storage.mechanism.Mechanism} An adaptive favicon helper.
+ * @return {function:orga.favicon.FaviconGetter} An adaptive favicon helper.
  */
 orga.ex.adapt.getAdaptedFaviconGetter = function() {
   return orga.ex.adapt.getDefaultConstructor('orga.favicon');
@@ -28,7 +28,7 @@ orga.ex.adapt.getAdaptedFaviconGetter = function() {
  * Sets a favicon helper that is adapted environment where the script runs
  * on.
  * @param {number} environment An environment where the constructor can works.
- * @param {goog.storage.mechanism.Mechanism} An favicon helper.
+ * @param {function:orga.favicon.FaviconGetter} An favicon helper.
  */
 orga.ex.adapt.setAdaptedFaviconGetter = function(environment, ctor) {
   return orga.ex.adapt.setDefaultConstructor(
@@ -41,9 +41,5 @@ orga.ex.adapt.setAdaptedFaviconGetter(
     /* constructor */ orga.favicon.FaviconGetter);
 
 orga.ex.adapt.setAdaptedFaviconGetter(
-    /* environment */ [
-                        orga.ex.Environment.CHROME_EX_BACKGROUND,
-                        orga.ex.Environment.CHROME_EX_NEWTAB,
-                        orga.ex.Environment.CHROME_EX_POPUP
-                      ],
+    /* environment */ orga.ex.Environment.CHROME_EX,
     /* constructor */ orga.favicon.chrome.ex.FaviconGetter);
